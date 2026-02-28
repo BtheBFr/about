@@ -32,7 +32,7 @@
         /* Заголовок */
         .header {
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
         }
 
         .header h1 {
@@ -50,6 +50,75 @@
             color: rgba(255, 255, 255, 0.6);
             font-size: 1.2rem;
             letter-spacing: 0.3px;
+        }
+
+        /* Блок новостей/анонсов */
+        .announcements {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0 3rem 0;
+        }
+
+        .announcement-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 100px;
+            padding: 0.8rem 1.8rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s ease;
+            cursor: default;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .announcement-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(168, 139, 255, 0.3);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .announcement-badge {
+            padding: 0.3rem 1rem;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .badge-news {
+            background: linear-gradient(135deg, #a88bff, #8a6de0);
+            color: white;
+            box-shadow: 0 0 15px rgba(168, 139, 255, 0.5);
+        }
+
+        .badge-upcoming {
+            background: rgba(255, 193, 112, 0.2);
+            color: #ffc170;
+            border: 1px solid #ffc17040;
+        }
+
+        .announcement-text {
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .announcement-date {
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .announcement-date i {
+            font-size: 0.7rem;
         }
 
         /* Сетка карточек */
@@ -255,6 +324,11 @@
             .projects-grid {
                 grid-template-columns: 1fr;
             }
+
+            .announcement-card {
+                width: 100%;
+                justify-content: center;
+            }
         }
     </style>
 </head>
@@ -263,6 +337,35 @@
         <div class="header">
             <h1>B the B</h1>
             <p>все работы в одном месте</p>
+        </div>
+
+        <!-- Новые плашки новостей и анонсов -->
+        <div class="announcements">
+            <!-- Плашка "Новость" -->
+            <div class="announcement-card">
+                <span class="announcement-badge badge-news">
+                    <i class="fas fa-star" style="margin-right: 5px; font-size: 0.7rem;"></i>
+                    Новость
+                </span>
+                <span class="announcement-text">Открылся этот сайт-навигатор</span>
+                <span class="announcement-date">
+                    <i class="far fa-calendar-alt"></i>
+                    Сегодня
+                </span>
+            </div>
+
+            <!-- Плашка "Предстоящее" -->
+            <div class="announcement-card">
+                <span class="announcement-badge badge-upcoming">
+                    <i class="fas fa-hourglass-half" style="margin-right: 5px; font-size: 0.7rem;"></i>
+                    Предстоящее
+                </span>
+                <span class="announcement-text">Скоро откроется 3 сайт (Завод Осколки)</span>
+                <span class="announcement-date">
+                    <i class="far fa-clock"></i>
+                    Март 2026
+                </span>
+            </div>
         </div>
 
         <div class="projects-grid">

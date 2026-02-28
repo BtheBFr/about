@@ -1,6 +1,7 @@
 const projectsData = [
     {
-        title: "B the B<br>музыка",
+        title: "B the B",
+        titleSecondLine: "музыка",
         description: "Все площадки, все треки. Слушай где удобно.",
         link: "https://band.link/btheb",
         status: "active",
@@ -8,13 +9,15 @@ const projectsData = [
     },
     {
         title: "School Hub",
+        titleSecondLine: "",
         description: "Образовательный хаб. Здесь будет много полезного для учебы.",
         link: "https://bthebfr.github.io/schoolhub/",
         status: "wip",
         statusText: "В разработке"
     },
     {
-        title: "Завод Осколки<br>коллаборация",
+        title: "Завод Осколки",
+        titleSecondLine: "коллаборация",
         description: "Совместный проект. Готовим что-то особенное.",
         link: "https://bthebfr.github.io/about/",
         status: "soon",

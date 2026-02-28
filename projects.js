@@ -1,25 +1,25 @@
 const projectsData = [
     {
         title: "B the B",
-        titleSecondLine: "музыка",
-        description: "Все площадки, все треки. Слушай где удобно.",
+        titleSecondLine: "Информация",
+        description: "Все площадки, все треки. Слушай где удобно. Подписывайся",
         link: "https://band.link/btheb",
         status: "active",
         statusText: "Активно"
     },
     {
         title: "School Hub",
-        titleSecondLine: "",
+        titleSecondLine: "Люди",
         description: "Образовательный хаб. Здесь будет много полезного для учебы.",
         link: "https://bthebfr.github.io/schoolhub/",
         status: "wip",
         statusText: "В разработке"
     },
     {
-        title: "Завод Осколки",
-        titleSecondLine: "коллаборация",
+        title: "Work",
+        titleSecondLine: "Коллаборация с Заводом Осколки",
         description: "Совместный проект. Готовим что-то особенное.",
-        link: "https://bthebfr.github.io/about/",
+        link: "",
         status: "soon",
         statusText: "Скоро"
     }
@@ -36,7 +36,7 @@ const announcementsData = [
     {
         badge: "upcoming",
         badgeText: "Предстоящее",
-        text: "Скоро откроется 3 сайт (Завод Осколки)",
+        text: "Скоро коллаборация с Заводом Осколки",
         date: "Март 2026",
         icon: "fa-hourglass-half"
     }
